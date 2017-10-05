@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Domo Meteo - Web Team</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="recursos/css/font-awesome.css" rel="stylesheet">
+    <link href="recursos/css/font-awesome.min.css" rel="stylesheet">
+    <link href="recursos/css/docs.css" rel="stylesheet" >
+
+    <link href="bootstrap-social.css" rel="stylesheet" >
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-brand" p>Domo-Meteo</div>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="description.html">Description</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="requirements.html">Requirements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tecno.html">Technologies/Methodologies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="arquitecture.html">Architecture</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="costs.html">Costs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="conclusions.html">Conclusions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="video.html">Tutorial</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="jumbotron">
+        <h1>Description</h1>
+      </div>
+    <div class="container marketing">
+
+      
+
+    	<div class="row featurette">
+        <div class="col-md-7">
+          
+          <p class="lead">Our project controls essential things at home (inside and outside). </p>
+          <p class="lead">It involves the monitoring of: </p>
+          <ul>
+            <li class="lead">Temperature, Atmospheric Pressure and Humidity.</li>
+            <li class="lead">Precipitation.</li>
+            <li class="lead">Doors/Windows Open/Close. </li>
+            <li class="lead">Movements Around the House.</li>
+            <li class="lead">Air Quality.</li>
+            <li class="lead">Light Level.</li>
+          </ul> 
+          <p class="lead">In order to control all of that, it’s necessary to: </p>
+          <ul>
+            <li class="lead">Collect Data From All the Sensors by two Arduinos</li>
+            <li class="lead">Send the data from the Arduinos to Raspberry Pi with radio antennas through MySensors.org protocol </li>
+            <li class="lead"> When data arrives to Raspberry through MySensors a Java Controller analyzes and stock it into the database </li>
+            <li class="lead"> Finally the data is shown in the web page by PHP requests to database</li>
+          </ul>     
+         <!-- <p class="lead"> </p>
+          <p class="lead text-justify"> . Afterwards, the data is processed and displayed to the final user.
+
+          The parts of the project are therefore defined by those functionalities. The arduino (1) collects the data and sends it to the raspberry pi (2), which processes and keeps the data into a database. The database, on the other hand, provides the information to a website (3), which shows it to the final user.
+
+          To do that, we have a Raspberry Pi that process data sended by two Arduinos with different sensors.
+          
+          Mysensors.org offers a communication protocol that combines Arduino boards with NRF24 radio boards.
+          When data arrives at raspberry through the Mysensors protocol, a Java Controller analyzes it to determine its type and stock it into a database.
+          Finally all of the data is showed in a web page using PHP and Javascript.</p> -->
+
+<!--Also it controls lighting.
+To control all of that it’s necessary to collect data from all the sensors installed at home and process all of that data to inform the user of whats going on at home.
+To do that, we have a Raspberry Pi that process data sended by two Arduinos that have all the different sensors.
+Mysensors.org offer a communication protocol that combines Arduino boards with NRF24 radio boards.
+When data arrives at raspberry through the Mysensors protocol a Java Controller analyzes them to determine the type of data and stock to database.
+Finally all data are showed in a web page using PHP and Javascript. -->
+
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-fluid mx-auto" src="../../assets/img/3.png" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <div class="row">
+          <div class="col-sm-4 social-buttons">
+            <a class="btn btn-block btn-social btn-linkedin text-white" href="https://www.linkedin.com/in/rub%C3%A9n-arrebola-de-haro-83b64313a/">
+              <span class="fa fa-linkedin"></span> Ruben Arrebola de Haro. </a>
+            <a class="btn btn-block btn-social btn-linkedin text-white" href="https://es.linkedin.com/in/escaleraperezarantxa">
+              <span class="fa fa-linkedin"></span> Arantxa Escalera Pérez. </a>
+            Desenvolupament d'Aplicacions Multiplataforma (DAM) &middot; <a href="http://www.educem.com">Educem</a>       
+          </div>
+        </div>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
